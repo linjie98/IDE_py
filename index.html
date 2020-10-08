@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="pyonline">
+    <meta name="theme" content="dark">
+    <meta name="keywords" content="pyonline">
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>linjie_py</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="desc">
+        <p id="title"><i class="fa fa-code"></i>linjie_py</p>
+    </div>
+    <div class="ctlPanel">
+        <span class="ctlbtn" onclick="runCode()"> <i class="fa fa-caret-right"></i> 运行</span>
+        <span class="ctlbtn" onclick="saveCode()"> <i class="fa fa-save"></i> 保存</span>
+    </div>
+    <div class="mainContainer" id="mctn">
+        <div class="leftContainer" id="editorContainer"></div>
+        <div class="rightContainer">
+            <pre id="outputContainer" title="程序输出"></pre>
+            <div id="turtleCanvas" title="海龟图"></div>
+        </div>
+    </div>
+
+</body>
+<footer>
+<!--    require.js解决Can only have one anonymous define call per script file问题-->
+    <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/skulpt/skulpt-dist/skulpt.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/skulpt/skulpt-dist/skulpt-stdlib.js"></script>
+    <script src="https://cdnjs.loli.net/ajax/libs/monaco-editor/0.9.0/min/vs/loader.js"></script>
+    <script src="script.js"></script>
+</footer>
+</html>
